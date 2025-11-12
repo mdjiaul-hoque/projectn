@@ -1,0 +1,74 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners. Learn chords, strumming, and simple songs.",
+    "image": "https://i.ibb.co.com/VpQdFbj0/gnir.jpg",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers. Focus on pronunciation and confidence.",
+    "image": "https://i.ibb.co.com/GQmS0mhZ/spkon.jpg",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Web Development Crash Course",
+    "providerName": "Rafi Ahmed",
+    "providerEmail": "rafi@skillswap.com",
+    "price": 30,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "HTML, CSS, JS basics and build a small portfolio SPA.",
+    "image": "https://i.ibb.co.com/99W7MbsQ/webcourse.jpg",
+    "category": "Coding"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Yoga & Mindfulness",
+    "providerName": "Nadia Islam",
+    "providerEmail": "nadia@skillswap.com",
+    "price": 12,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Beginner-friendly yoga classes with breathing exercises and short meditations.",
+    "image": "https://i.ibb.co.com/Nd3v2Mfy/yoga.jpg",
+    "category": "Health"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Basic Photography",
+    "providerName": "Hasan Khan",
+    "providerEmail": "hasan@skillswap.com",
+    "price": 18,
+    "rating": 4.5,
+    "slotsAvailable": 4,
+    "description": "Composition, lighting, and phone-camera techniques for beginners.",
+    "image": "https://i.ibb.co.com/XTZKmJB/photo.jpg",
+    "category": "Arts"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Conversational Spanish",
+    "providerName": "Mariana Lopez",
+    "providerEmail": "mariana@skillswap.com",
+    "price": 15,
+    "rating": 4.6,
+    "slotsAvailable": 3,
+    "description": "Practice Spanish conversation weekly with a native speaker.",
+    "image": "https://i.ibb.co.com/3mwsrw1g/spanish.png",
+    "category": "Language"
+  }
+]

@@ -1,23 +1,48 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
-
-// react-router
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import SignUp from './SignUp.jsx';
+import App from './App.jsx'
+import Layout from './Layout.jsx/Layout.jsx';
+import Home from './pages/Home.jsx';
+import SkillDetails from './pages/SkillDetails.jsx';
+import Login from './pages/Login.jsx';
+import SignUp from './pages/SignUp.jsx';
+import AuthProvider from './providers/AuthProvider.jsx';
+import ProtectedRoute from './routes/ProtectedRoute.jsx';
+// import Layout from './Layout.jsx/Layout.jsx';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <SignUp></SignUp>
+    element: <Layout></Layout>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
+      },
+      {
+        path: "Signup",
+        element: <SignUp></SignUp>,
+      },
+      {
+        // Dynamic route for skill details
+        path: "skill/:id",
+        element: <ProtectedRoute><SkillDetails /></ProtectedRoute>,
+      },
+    ]
   },
 ]);
 
-
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-     <RouterProvider router={router} />
-  </StrictMode>,
+  <AuthProvider>
+    <RouterProvider router={router} />,
+  </AuthProvider>
+
 )
