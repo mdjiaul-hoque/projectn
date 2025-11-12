@@ -11,7 +11,7 @@ import Login from './pages/Login.jsx';
 import SignUp from './pages/SignUp.jsx';
 import AuthProvider from './providers/AuthProvider.jsx';
 import ProtectedRoute from './routes/ProtectedRoute.jsx';
-import NotFound from './pages/NotFound.jsx';
+// import NotFound from './pages/NotFound.jsx';
 // import Profile from './pages/Profile.jsx';
 
 
@@ -35,17 +35,17 @@ const router = createBrowserRouter([
       },
       // {
       //   path: "profile",
-      //   element: <Profile></Profile>
+      //   element: <Profile></Profile>,
       // },
         {
         // Dynamic route for skill details
         path: "skill/:id",
         element: <ProtectedRoute><SkillDetails /></ProtectedRoute>,
       },
-      {
-        path: '*',
-        element: <NotFound></NotFound>,
-      }
+      // {
+      //   path: '*',
+      //   element: <NotFound></NotFound>,
+      // }
     ]
   },
 ]);

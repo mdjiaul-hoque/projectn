@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { auth } from "../firebase/firebase.config";
+// import auth from "../Firebase/firebase.init"
 import { updateProfile } from "firebase/auth";
 import toast from "react-hot-toast";
 
 export default function Profile() {
+    
   const user = auth.currentUser;
   const [editing, setEditing] = useState(false);
   const [form, setForm] = useState({ displayName: user?.displayName || "", photoURL: user?.photoURL || "" });
