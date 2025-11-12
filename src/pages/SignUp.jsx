@@ -70,6 +70,8 @@ export default function Signup() {
   return (
     <div className="max-w-md mx-auto mt-20 p-6 bg-white shadow rounded">
       <h2 className="text-2xl font-bold mb-6 text-center">Signup</h2>
+
+      
       <form onSubmit={handleSignup} className="space-y-4">
         <input
           type="text"
